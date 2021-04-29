@@ -8,27 +8,7 @@
         "containerName": {
             "type": "string"
         },
-        "imageType": {
-            "type": "string",
-            "allowedValues": [
-                "Public",
-                "Private"
-            ]
-        },
         "imageName": {
-            "type": "string"
-        },
-        "osType": {
-            "type": "string",
-            "allowedValues": [
-                "Linux",
-                "Windows"
-            ]
-        },
-        "numberCpuCores": {
-            "type": "string"
-        },
-        "memory": {
             "type": "string"
         },
         "restartPolicy": {
@@ -48,7 +28,7 @@
         "imagePassword": {
             "type": "secureString"
         },
-        "environmentVariable0": {
+        "tgApiToken": {
             "type": "string"
         }
     },
@@ -66,21 +46,21 @@
                             "image": "[parameters('imageName')]",
                             "resources": {
                                 "requests": {
-                                    "cpu": "[int(parameters('numberCpuCores'))]",
-                                    "memoryInGB": "[float(parameters('memory'))]"
+                                    "cpu": "1",
+                                    "memoryInGB": "1"
                                 }
                             },
                             "environmentVariables": [
                                 {
                                     "name": "TG_API_TOKEN",
-                                    "value": "[parameters('environmentVariable0')]"
+                                    "value": "[parameters('tgApiToken')]"
                                 }
                             ]
                         }
                     }
                 ],
                 "restartPolicy": "[parameters('restartPolicy')]",
-                "osType": "[parameters('osType')]",
+                "osType": "Linux",
                 "imageRegistryCredentials": [
                     {
                         "server": "[parameters('imageRegistryLoginServer')]",

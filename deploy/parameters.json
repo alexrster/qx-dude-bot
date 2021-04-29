@@ -8,14 +8,8 @@
         "location": {
             "value": "northeurope"
         },
-        "imageType": {
-            "value": "Private"
-        },
         "imageName": {
             "value": "qxzreg.azurecr.io/qx-dude-bot:cg1"
-        },
-        "osType": {
-            "value": "Linux"
         },
         "numberCpuCores": {
             "value": "1"
@@ -35,7 +29,7 @@
         "imagePassword": {
             "value": null
         },
-        "environmentVariable0": {
+        "tgApiToken": {
             "value": "1734503359:AAEC8oGtieN3jdkGAAjsAA1wo2dHL4hcL7I"
         }
     }
