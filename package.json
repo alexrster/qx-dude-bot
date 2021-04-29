@@ -1,0 +1,14 @@
+{
+  "name": "qx-dude-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AY",
+  "license": "ISC",
+  "dependencies": {
+    "telegram-bot-api": "^2.0.1"
+  }
+}
