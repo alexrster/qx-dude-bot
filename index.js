@@ -1,7 +1,7 @@
 const TG = require('telegram-bot-api');
 
 const api = new TG({
-  token: process.env.TG_API_TOKEN || "1734503359:AAEC8oGtieN3jdkGAAjsAA1wo2dHL4hcL7I"
+  token: process.env.TG_API_TOKEN
 });
 
 // Define your message provider
