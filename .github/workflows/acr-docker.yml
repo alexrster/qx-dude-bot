@@ -22,7 +22,6 @@ jobs:
         tenant: ${{ secrets.tenant }}
         registry: ${{ secrets.registry }}
         repository: ${{ secrets.repository }}
-        image: qx-dude-bot
         tag: cg1
         branch: master
         folder: .
